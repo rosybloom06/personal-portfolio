@@ -68,10 +68,10 @@
 
         <!-- Nav Links -->
         <ul class="flex items-center gap-12 text-lg font-medium">
-            <li><a href="#about" class="hover:text-blue-500 transition">About</a></li>
-            <li><a href="#skills" class="hover:text-blue-500 transition">Skills</a></li>
-            <li><a href="#projects" class="hover:text-blue-500 transition">Projects</a></li>
-            <li><a href="#contact" class="hover:text-blue-500 transition">Contact</a></li>
+            <li><a href="#about" class="relative hover:text-primary transition after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-primary hover:after:w-full after:transition-all" transition">About</a></li>
+            <li><a href="#skills" class="relative hover:text-primary transition after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-primary hover:after:w-full after:transition-all" transition">Skills</a></li>
+            <li><a href="#projects" class="relative hover:text-primary transition after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-primary hover:after:w-full after:transition-all" transition">Projects</a></li>
+            <li><a href="#contact" class="relative hover:text-primary transition after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-primary hover:after:w-full after:transition-all" transition">Contact</a></li>
         </ul>
     </div>
 </nav>
@@ -99,8 +99,8 @@
             <span class="text-primary">Pattanayak</span>
         </h1>
 
-        <h2 class="text-2xl md:text-3xl text-slate-300 font-semibold mb-6">
-            Web Developer
+        <h2 class="text-2xl md:text-3xl font-semibold text-slate-300 mb-6">
+            I'm a <span id="typing" class="text-primary"></span>
         </h2>
 
         <p class="text-muted text-lg leading-8 max-w-xl mb-8">
@@ -112,16 +112,14 @@
         <!-- Buttons -->
         <div class="flex flex-col sm:flex-row gap-5">
 
-            <!-- View Projects Button -->
             <a href="#projects"
-            class="bg-primary text-white px-7 py-3 rounded-xl font-semibold hover:bg-blue-600 transition duration-300 shadow-lg text-center">
+            class="bg-primary text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-600 transition duration-300 shadow-lg text-center">
                 View Projects
             </a>
 
-            <!-- Download Resume Button -->
             <a href="assets/Resume.pdf"
             target="_blank"
-            class="bg-primary text-white px-7 py-3 rounded-xl font-semibold hover:bg-blue-600 transition duration-300 shadow-lg text-center">
+            class="bg-primary text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-600 transition duration-300 shadow-lg text-center">
                 Download Resume
             </a>
 
@@ -134,13 +132,13 @@
         <div class="relative">
 
             <div
-                class="absolute inset-0 rounded-full bg-primary blur-3xl opacity-20">
+                class="absolute inset-0 rounded-full bg-primary blur-3xl opacity-20 scale-110 profile-glow">
             </div>
 
             <img
                 src="images/profile/profile.jpeg"
                 alt="Auropriya Pattanayak"
-                class="relative w-80 h-80 lg:w-[380px] lg:h-[380px] object-cover rounded-full border-4 border-blue-500 shadow-2xl"
+                class="relative w-80 h-80 md:w-[420px] md:h-[420px] lg:w-[460px] lg:h-[460px] rounded-full object-cover border-4 border-primary shadow-2xl float"
             />
 
         </div>
@@ -154,25 +152,40 @@
     id="about"
     class="max-w-7xl mx-auto px-6 py-24">
 
-    <h2 class="text-4xl font-bold mb-12">
-        About Me
-    </h2>
+    <div class="text-center mb-16">
+        <h2 class="text-5xl font-bold">
+            About <span class="text-primary">Me</span>
+        </h2>
+
+        <p class="text-muted mt-4 max-w-2xl mx-auto">
+            Get to know more about who I am, what I do, and the technologies I'm currently learning.
+        </p>
+    </div>
 
     <div class="grid lg:grid-cols-2 gap-12">
 
         <!-- Left Side -->
-        <div>
+        <div class="space-y-6">
 
-            <p class="text-muted text-lg leading-8 mb-6">
-                Hello! I'm Auropriya Pattanayak, a Computer Science Engineering
-                student passionate about frontend development and creating
-                modern, responsive websites.
+            <h3 class="text-3xl font-semibold">
+                Frontend Developer & CSE Student
+            </h3>
+
+            <p class="text-muted text-lg leading-8">
+                Hello! I'm <span class="text-primary font-semibold">Auropriya Pattanayak</span>,
+                a Computer Science Engineering student passionate about creating modern,
+                responsive, and user-friendly web applications.
             </p>
 
             <p class="text-muted text-lg leading-8">
-                I enjoy turning ideas into interactive web experiences while
-                continuously learning new technologies. My current focus is
-                HTML, CSS, Tailwind CSS, JavaScript and React.
+                I enjoy transforming ideas into interactive digital experiences while
+                continuously learning new technologies. My current focus is on
+                <span class="text-white font-medium">HTML, CSS, Tailwind CSS, JavaScript, React, and Python.</span>
+            </p>
+
+            <p class="text-muted text-lg leading-8">
+                I'm actively looking for internship opportunities where I can contribute,
+                learn from experienced developers, and grow as a software engineer.
             </p>
 
         </div>
@@ -180,22 +193,22 @@
         <!-- Right Side -->
         <div class="grid grid-cols-2 gap-6">
 
-            <div class="bg-card rounded-xl p-6 text-center">
-                <h3 class="text-3xl font-bold text-primary">4+</h3>
+            <div class="bg-card rounded-xl p-6 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl transition duration-300">
+                <h3 class="text-3xl font-bold text-primary">5+</h3>
                 <p class="mt-2">Projects</p>
             </div>
 
-            <div class="bg-card rounded-xl p-6 text-center">
-                <h3 class="text-3xl font-bold text-primary">6+</h3>
-                <p class="mt-2">Skills</p>
+            <div class="bg-card rounded-xl p-6 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl transition duration-300">
+                <h3 class="text-3xl font-bold text-primary">20+</h3>
+                <p class="mt-2">Technologies</p>
             </div>
 
-            <div class="bg-card rounded-xl p-6 text-center">
-                <h3 class="text-3xl font-bold text-primary">100%</h3>
-                <p class="mt-2">Learning</p>
+            <div class="bg-card rounded-xl p-6 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl transition duration-300">
+                <h3 class="text-3xl font-bold text-primary">2026</h3>
+                <p class="mt-2">Graduate</p>
             </div>
 
-            <div class="bg-card rounded-xl p-6 text-center">
+            <div class="bg-card rounded-xl p-6 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl transition duration-300">
                 <h3 class="text-3xl font-bold text-primary">Open</h3>
                 <p class="mt-2">Internships</p>
             </div>
@@ -218,85 +231,85 @@
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
 
         <!-- HTML -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <i class="devicon-html5-plain colored text-6xl"></i>
             <h3 class="mt-4 text-xl font-semibold">HTML5</h3>
         </article>
 
         <!-- CSS -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <i class="devicon-css3-plain colored text-6xl"></i>
             <h3 class="mt-4 text-xl font-semibold">CSS3</h3>
         </article>
 
         <!-- Tailwind -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <i class="devicon-tailwindcss-original colored text-6xl"></i>
             <h3 class="mt-4 text-xl font-semibold">Tailwind CSS</h3>
         </article>
 
         <!-- JavaScript -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <i class="devicon-javascript-plain colored text-6xl"></i>
             <h3 class="mt-4 text-xl font-semibold">JavaScript</h3>
         </article>
 
         <!-- React -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <i class="devicon-react-original colored text-6xl"></i>
             <h3 class="mt-4 text-xl font-semibold">React</h3>
         </article>
 
         <!-- Node.js -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <i class="devicon-nodejs-plain colored text-6xl"></i>
             <h3 class="mt-4 text-xl font-semibold">Node.js</h3>
         </article>
 
         <!-- Java -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <i class="devicon-java-plain colored text-6xl"></i>
             <h3 class="mt-4 text-xl font-semibold">Java</h3>
         </article>
 
         <!-- Python -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <i class="devicon-python-plain colored text-6xl"></i>
             <h3 class="mt-4 text-xl font-semibold">Python</h3>
         </article>
 
         <!-- Django -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <i class="devicon-django-plain text-6xl"></i>
             <h3 class="mt-4 text-xl font-semibold">Django</h3>
         </article>
 
         <!-- SQL -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <i class="devicon-mysql-plain colored text-6xl"></i>
             <h3 class="mt-4 text-xl font-semibold">SQL</h3>
         </article>
 
         <!-- Git -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <i class="devicon-git-plain colored text-6xl"></i>
             <h3 class="mt-4 text-xl font-semibold">Git</h3>
         </article>
 
         <!-- GitHub -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <i class="devicon-github-original text-6xl"></i>
             <h3 class="mt-4 text-xl font-semibold">GitHub</h3>
         </article>
 
         <!-- Linux -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <i class="devicon-linux-plain colored text-6xl"></i>
             <h3 class="mt-4 text-xl font-semibold">Linux</h3>
         </article>
 
         <!-- NumPy -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <img
                 src="https://cdn.simpleicons.org/numpy/4DABCF"
                 alt="NumPy"
@@ -305,7 +318,7 @@
         </article>
 
         <!-- Pandas -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <img
                 src="https://cdn.simpleicons.org/pandas/150458"
                 alt="Pandas"
@@ -314,43 +327,43 @@
         </article>
 
         <!-- Matplotlib -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <span class="text-5xl">📊</span>
             <h3 class="mt-4 text-xl font-semibold">Matplotlib</h3>
         </article>
 
         <!-- Jupyter Notebook -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <span class="text-5xl">📒</span>
             <h3 class="mt-4 text-xl font-semibold">Jupyter Notebook</h3>
         </article>
 
         <!-- OOP -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <span class="text-5xl">🧩</span>
             <h3 class="mt-4 text-xl font-semibold">Object-Oriented Programming</h3>
         </article>
 
         <!-- Data Cleaning -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <span class="text-5xl">🧹</span>
             <h3 class="mt-4 text-xl font-semibold">Data Cleaning</h3>
         </article>
 
         <!-- VS Code -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <i class="devicon-vscode-plain colored text-6xl"></i>
             <h3 class="mt-4 text-xl font-semibold">VS Code</h3>
         </article>
 
         <!-- npm -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
             <i class="devicon-npm-original-wordmark colored text-6xl"></i>
             <h3 class="mt-4 text-xl font-semibold">npm</h3>
         </article>
 
         <!-- Gemini API -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
         <span class="text-6xl">🤖</span>
         <h3 class="mt-4 text-xl font-semibold">
             Gemini API
@@ -358,7 +371,7 @@
         </article>
 
         <!-- Prompt Engineering -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
         <span class="text-6xl">💡</span>
         <h3 class="mt-4 text-xl font-semibold">
             Prompt Engineering
@@ -366,7 +379,7 @@
         </article>
 
         <!-- Kaggle -->
-        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <article class="bg-card rounded-xl p-8 text-center hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
         <i class="devicon-kaggle-original colored text-6xl"></i>
         <h3 class="mt-4 text-xl font-semibold">
             Kaggle
@@ -382,19 +395,27 @@
     id="projects"
     class="max-w-7xl mx-auto px-6 py-24">
 
-    <h2 class="text-4xl font-bold mb-10">
-        Projects
+    <div class="text-center mb-16">
+
+    <h2 class="text-5xl font-bold">
+        My <span class="text-primary">Projects</span>
     </h2>
+
+    <p class="text-muted mt-4 max-w-2xl mx-auto">
+        Here are some of the projects I've built while learning web development and data analytics.
+    </p>
+
+    </div>
 
     <div class="grid md:grid-cols-2 gap-8">
 
 <!-- Project 1 -->
-<article class="bg-card rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
+<article class="bg-card rounded-2xl overflow-hidden shadow-lg hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
 
     <img
-        src="images/projects/blinkit.png"
+        src="./images/projects/blink.png"
         alt="Blinkit Landing Page"
-        class="w-full h-52 object-cover">
+        class="w-full h-64 object-contain bg-slate-100 p-2">
 
     <div class="p-6">
 
@@ -402,9 +423,21 @@
             Blinkit Landing Page
         </h3>
 
-        <p class="text-primary text-sm mb-3">
-            HTML • CSS • Responsive Design
-        </p>
+        <div class="flex flex-wrap gap-2 mb-5">
+
+        <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">
+            HTML
+        </span>
+
+        <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">
+            CSS
+        </span>
+
+        <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">
+            Responsive Design
+        </span>
+
+    </div>
 
         <p class="text-muted leading-7 mb-6">
             Developed a fully responsive landing page inspired by Blinkit,
@@ -432,12 +465,12 @@
 
 </article>
 <!-- Project 2 -->
-<article class="bg-card rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
+<article class="bg-card rounded-2xl overflow-hidden shadow-lg hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl hover:shadow-xl transition duration-300">
 
     <img
         src="images/projects/studyplanner.png"
         alt="AI-Based Adaptive Study Planner"
-        class="w-full h-52 object-cover">
+        class="w-full h-64 object-contain bg-slate-100 p-2">
 
     <div class="p-6">
 
@@ -445,9 +478,15 @@
             AI-Based Adaptive Study Planner
         </h3>
 
-        <p class="text-primary text-sm mb-3">
-            React • Node.js • Gemini API
-        </p>
+        <div class="flex flex-wrap gap-2 mb-5">
+
+        <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">React</span>
+
+        <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">Node.js</span>
+
+        <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">Gemini API</span>
+
+        </div>
 
         <p class="text-muted leading-7 mb-6">
             Developed an AI-powered study planner that generates personalized study schedules
@@ -477,12 +516,12 @@
 
 </article>
 <!-- Project 3 -->
-<article class="bg-card rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
+<article class="bg-card rounded-2xl overflow-hidden shadow-lg hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl transition duration-300">
 
     <img
         src="images/projects/retail.png"
         alt="Retail Sales Data Analysis"
-        class="w-full h-52 object-cover">
+        class="w-full h-64 object-contain bg-slate-100 p-2">
 
     <div class="p-6">
 
@@ -490,9 +529,17 @@
             Retail Sales Data Analysis (EDA)
         </h3>
 
-        <p class="text-primary text-sm mb-3">
-            Python • Pandas • Matplotlib • NumPy
-        </p>
+        <div class="flex flex-wrap gap-2 mb-5">
+
+        <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">Python</span>
+
+        <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">Pandas</span>
+
+        <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">NumPy</span>
+
+        <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">Matplotlib</span>
+    
+        </div>
 
         <p class="text-muted leading-7 mb-6">
             Performed exploratory data analysis on retail sales data to uncover
@@ -517,12 +564,12 @@
 </article>
 <!-- Project 4 -->
 
-<article class="bg-card rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
+<article class="bg-card rounded-2xl overflow-hidden shadow-lg hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl transition duration-300">
 
     <img
         src="images/projects/datacleaning.png"
         alt="Data Cleaning Project"
-        class="w-full h-52 object-cover">
+        class="w-full h-64 object-contain bg-slate-100 p-2">
 
     <div class="p-6">
 
@@ -530,9 +577,15 @@
             Data Cleaning & Preprocessing
         </h3>
 
-        <p class="text-primary text-sm mb-3">
-            Python • Pandas • NumPy
-        </p>
+        <div class="flex flex-wrap gap-2 mb-5">
+
+            <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">Python</span>
+
+            <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">Pandas</span>
+
+            <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">NumPy</span>
+
+        </div>
 
         <p class="text-muted leading-7 mb-6">
             Cleaning and transforming messy datasets into analysis-ready data by
@@ -551,12 +604,12 @@
 
 </article>
 <!-- Project 5 -->
-<article class="bg-card rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
+<article class="bg-card rounded-2xl overflow-hidden shadow-lg hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl transition duration-300">
 
     <img
         src="images/projects/portfolio.png"
         alt="Personal Portfolio Website"
-        class="w-full h-52 object-cover">
+        class="w-full h-64 object-contain bg-slate-100 p-2">
 
     <div class="p-6">
 
@@ -564,9 +617,17 @@
             Personal Portfolio Website
         </h3>
 
-        <p class="text-primary text-sm mb-3">
-            HTML • Tailwind CSS • JavaScript • GitHub Pages
-        </p>
+        <div class="flex flex-wrap gap-2 mb-5">
+
+            <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">HTML</span>
+
+            <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+
+            <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
+
+            <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">GitHub Pages</span>
+
+        </div>
 
         <p class="text-muted leading-7 mb-6">
             Designed and developed a modern, fully responsive personal portfolio
@@ -581,17 +642,24 @@
                 Completed
             </span>
 
-            <a href="#" class="text-primary font-semibold hover:underline">
+            <a href="#"
+            class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+
                 GitHub
+
             </a>
 
-            <a href="#" class="text-primary font-semibold hover:underline">
+            <a href="#"
+            class="border border-primary text-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition">
+
                 Live Demo
+
             </a>
 
         </div>
 
     </div>
+</article>
 
 </div>
 
@@ -617,7 +685,7 @@ class="max-w-7xl mx-auto px-6 py-24">
         <!-- Email -->
         <a
         href="mailto:auropriya07@gmail.com"
-        class="bg-card p-8 rounded-2xl flex items-center gap-6 hover:-translate-y-2 transition duration-300">
+        class="bg-card p-8 rounded-2xl flex items-center gap-6 hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl transition duration-300">
 
             <i class="fas fa-envelope text-4xl text-primary"></i>
 
@@ -639,7 +707,7 @@ class="max-w-7xl mx-auto px-6 py-24">
 <a
     href="https://github.com/rosybloom06"
     target="_blank"
-    class="bg-card p-8 rounded-2xl flex items-center gap-6 hover:-translate-y-2 transition duration-300">
+    class="bg-card p-8 rounded-2xl flex items-center gap-6 hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl transition duration-300">
 
     <i class="fab fa-github text-4xl"></i>
 
@@ -661,7 +729,7 @@ class="max-w-7xl mx-auto px-6 py-24">
 <a
     href="https://www.linkedin.com/in/auropriya-pattanayak-3364a032b/"
     target="_blank"
-    class="bg-card p-8 rounded-2xl flex items-center gap-6 hover:-translate-y-2 transition duration-300">
+    class="bg-card p-8 rounded-2xl flex items-center gap-6 hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl transition duration-300">
 
     <i class="fab fa-linkedin text-4xl text-blue-500"></i>
 
@@ -682,7 +750,7 @@ class="max-w-7xl mx-auto px-6 py-24">
 <a
     href="assets/resume.pdf"
     target="_blank"
-    class="bg-card p-8 rounded-2xl flex items-center gap-6 hover:-translate-y-2 transition duration-300">
+    class="bg-card p-8 rounded-2xl flex items-center gap-6 hover:-translate-y-3 hover:shadow-blue-500/20 hover:shadow-2xl transition duration-300">
 
     <i class="fas fa-file-download text-4xl text-green-500"></i>
 
@@ -706,17 +774,87 @@ class="max-w-7xl mx-auto px-6 py-24">
 
 </main>
 
-    <!-- Footer -->
-<footer class="text-center py-8 border-t border-slate-700">
+<!-- Footer -->
+<footer class="border-t border-slate-700 py-10 mt-20">
 
-    <p>
-        © 2026 Auropriya Pattanayak. All Rights Reserved.
-    </p>
+<div class="max-w-7xl mx-auto px-6 text-center">
+
+<h2 class="text-2xl font-bold mb-3">
+Auropriya Pattanayak
+</h2>
+
+<p class="text-muted mb-6">
+Frontend Developer • CSE Student
+</p>
+
+<div class="flex justify-center gap-8 text-3xl">
+
+<a href="https://github.com/rosybloom06">
+<i class="fab fa-github hover:text-primary transition"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/auropriya-pattanayak-3364a032b/">
+<i class="fab fa-linkedin hover:text-primary transition"></i>
+</a>
+
+<a href="mailto:auropriya07@gmail.com">
+<i class="fas fa-envelope hover:text-primary transition"></i>
+</a>
+
+</div>
+
+<p class="text-muted mt-8">
+© 2026 Auropriya Pattanayak. All Rights Reserved.
+</p>
+
+</div>
 
 </footer>
 
-    <!-- JavaScript -->
-    <script src="./js/script.js"></script>
+<!-- JavaScript -->
+<script src="./js/script.js"></script>
+
+<script>
+const words = [
+    "Frontend Developer",
+    "Web Developer",
+    "CSE Student",
+    "React Learner"
+];
+
+let i = 0;
+let j = 0;
+let currentWord = "";
+let isDeleting = false;
+
+function type() {
+
+    currentWord = words[i];
+
+    if(!isDeleting){
+        document.getElementById("typing").textContent =
+        currentWord.substring(0,j++);
+    }else{
+        document.getElementById("typing").textContent =
+        currentWord.substring(0,j--);
+    }
+
+    if(!isDeleting && j===currentWord.length+1){
+        isDeleting=true;
+        setTimeout(type,1000);
+        return;
+    }
+
+    if(isDeleting && j===0){
+        isDeleting=false;
+        i=(i+1)%words.length;
+    }
+
+    setTimeout(type,isDeleting?60:120);
+}
+
+type();
+</script>
 
 </body>
 
