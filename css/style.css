@@ -163,3 +163,33 @@ animation:float 4s ease-in-out infinite;
         opacity: 0.35;
     }
 }
+
+.project-links{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.project-links a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding: 0 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.nav-link.active{
+    color:#3B82F6;
+}
+
+.nav-link.active::after{
+    width:100%;
+}
